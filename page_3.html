@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Review</title>
+        <!-- Meta tags to give information about what the website is generally about -->
+        <meta name="description" content="Information about how to spend one's time on the Big Island of Hawaii" >
+        <meta name="keywords" content="Hawaii, Big, Island, Tour, Kona, Vacation">
+        <meta http-equiv="author" content="Rachel Martini">
+        <!-- Link to external stylesheet -->
+         <link href="css/styles.css" type="text/css" rel="stylesheet" />
+        <!-- Need to take sizing out of text box and put it into CSS -->
+    </head>
+    <body>
+        <h1>Hawaii Haven</h1>
+        <!-- Navagation bar to aid user in exploring the website -->
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page_1.html">Things to Do on the Big Island</a></li>
+                <li><a href="page_2.html">Tour Packages</a></li>
+                <li><a href="page_3.html">Leave a Review</a></li>
+                <li><a href="page_4.html">My Favorite Beaches</a></li>
+            </ul>
+        </div>
+       <!--Feedback form on whichever type of excursion the user took -->
+        <form action="" method="get">
+            <!-- First set of form information: excursion date and guide name -->
+            <fieldset>
+                <legend>
+                    Excursion Information:
+                </legend>
+                <!-- date entry box in mm/dd/yyyy format -->
+                <label>
+                    Excursion date:
+                    <input type="date" name="tour-date" size="30" maxlength="100">
+                </label>
+                <br />
+                <!-- text entry box for guide name, limit of 100 chars -->
+                <label>
+                    Tour Guide Name:
+                    <input type="text" name="name" size="30" maxlength="100">
+                </label>
+                <br />
+            </fieldset>
+            <br />
+            <!-- Second set of form information: rating, location, notes, and subscription to email chain -->
+            <fieldset>
+                <legend>
+                    Feedback:
+                </legend>
+                <p>
+                    <label for="excursion-location">
+                        What part of the island did you visit?
+                    </label>
+                    <!-- dropdown of options of excursion locations-->
+                    <select name="location" id="excursion-location">
+                        <option value="Hilo">Hilo</option>
+                        <option value="Kailua Kona">Kailua Kona</option>
+                        <option value="Volcano Village">Volcano Village</option>
+                    </select>
+                </p>
+                <!-- Radio buttons to rate excursion quality -->
+                <p>
+                    How would you rate your excursion? (1-poor, 5-excellent)
+                    <br />
+                    <label>
+                        <input type="radio" name="rating" value="1" />
+                        1
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="2" />
+                        2
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="3" />
+                        3
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="4" />
+                        4
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="5" />
+                        5
+                    </label>
+                </p>
+                <p>
+                    <label for="comments">
+                        Notes/Things for us to Know:
+                    </label>
+                    <br />
+                    <textarea rows="4" cols="40" id="comments" >
+                    </textarea>
+                </p>
+                <!-- (default checked) checkbox to subscribe to emails  -->
+                <label>
+                    <input type="checkbox" name="subscribe" checked="checked" />
+                    I would like to recieve emails about upcoming excursions
+                </label>
+                <br />
+                <input type="submit" value="Share feedback"/>
+            </fieldset>
+        </form>
+    </body>
+    <!-- Footer including CMU logo and personal email for inquiries -->
+    <footer>
+        <img src="img/cmu.png" alt="Carnegie Mellon University logo"/>
+        <p> &copy; Rachel Martini 2023</p>
+        <a href = "mailto: rmartini@andrew.cmu.edu">Contact Me!</a>
+    </footer>
+</html>
