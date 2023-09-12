@@ -1,0 +1,207 @@
+/* I ordered all elements based of of Part II in https://meiert.com/en/blog/how-to-order-css-selectors/
+and specifically labeled the main categories with a comment. Then within each main category, I
+I alphabetically sorted the elements part of each subsection. */
+
+/* Metadata, specifically style  (google fonts) */
+
+@font-face {
+    font-family:'Inter';
+    src: url('fonts/Inter');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster');
+
+}
+
+@font-face {
+    font-family:'Oswald';
+    src: url('fonts/Oswald');
+}
+
+
+/* Sectioning and Structuring */
+body{
+    background-color: #E2E2E2;
+    font-family: 'Inter', Arial;
+}
+
+figcaption.sub {
+    font-size: 15px;
+    display: block;
+    margin: 50px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+figure img {
+    height: 400px;
+    width: 600px;
+    margin: 40px 500px 20px 500px;
+}
+
+footer img{
+    height: 50px;
+    width: 50px;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+#nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#nav li {
+    display: inline;
+    padding: 20px;
+    border: 1px solid #A9D6E5;
+    background-color: #A9D6E5;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bolder;
+}
+
+#nav {
+    padding: 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Lobster', cursive;
+}
+
+h4 {
+    border: 10px solid #19747E;
+    background-color: #19747E;
+    margin: 50px 10px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+
+/* Media */
+img.secondary {
+    height: 400px;
+    width: 400px;
+    margin: 0px 640px 0px 640px;
+}
+
+
+/* Forms */
+fieldset {
+    margin: 5px;
+    border: 4px solid #ffffff;
+    background-color: #d6dee9;
+}
+form {
+    margin: 50px;
+}
+
+legend {
+    font-size: 20px;
+    border: 3px solid #a9cbe5;
+    background-color:#A9D6E5;
+    border-spacing: 10px 100px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* Tables */
+table {
+    margin: 150px auto 100px auto;
+    min-width: 850px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-spacing: 3px 6px;
+    background-color: #d6dee9;
+    border: 5px solid white;
+}
+
+th, td {
+    border-top: 1px solid #f1f8fe;
+    border-bottom: 1px solid #cbd2d8;
+    border-right: 1px solid #cbd2d8;
+}
+
+th.feature, tr.head {
+    background-color: #19747E;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+td {
+    font-size: px;
+    text-align: center;
+}
+
+
+/* Classes or ID's */
+#blurb {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+#Green-sand iframe {
+    margin: 10px 520px 50px 520px;
+}
+#Green-sand p {
+    text-align: center;
+    margin: 90px 520px 10px 520px;
+    Font-size: 20px;
+    Font-weight: bold;
+ }
+
+ #landing {
+    display: block;
+    height: 300px;
+    width: 500px;
+    margin: 50px auto;
+}
+#Park iframe {
+    margin: 10px 520px 10px 520px;
+}
+#Park p {
+    text-align: center;
+    margin: 10px;
+    Font-size: 20px;
+    Font-weight: bold;
+}
+
+#welcome {
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
